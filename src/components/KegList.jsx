@@ -64,10 +64,10 @@ function KegList() {
     <div>
       {kegList.map((keg, index) => (
         <KegMenu
-          name={KegMenu.name}
-          brand={KegMenu.brand}
-          price={KegMenu.price}
-          alcoholContent={KegMenu.alcoholContent}
+          name={keg.name}
+          brand={keg.brand}
+          price={keg.price}
+          alcoholContent={keg.alcoholContent}
           key={index}
         />
       ))}
