@@ -4,13 +4,19 @@ import './App.css';
 import Header from './components/Header';
 import KegMenu from './components/KegMenu';
 import KegList from './components/KegList';
+import NewKegForm from './components/NewKegForm';
+import { Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className='App'>
       <Header/>
-      <KegMenu/>
-      <KegList/>
+      <Switch>
+        <Route exact path='/' component={KegList} />
+        <Route path='/NewKegForm' component={NewKegForm} />
+      </Switch>
+
+
 
     </div>
   );
