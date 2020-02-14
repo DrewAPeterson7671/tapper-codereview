@@ -62,6 +62,7 @@ function KegList(){
 
   return (
     <div>
+      <h2>Our Selection</h2>
       {kegList.map((kegMenu,index) =>
         <KegMenu
           name={kegMenu.name}
@@ -71,7 +72,7 @@ function KegList(){
           key={index}/>
       )}
     </div>
-  );  
+  );
 }
 
 
