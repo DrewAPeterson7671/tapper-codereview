@@ -1,3 +1,6 @@
+import React from 'react';
+import KegMenu from './KegMenu';
+
 const kegList = [
   {
     name: 'Hell Yes',
@@ -55,6 +58,23 @@ const kegList = [
   },
 ];
 
+function KegList(){
+
+  return (
+    <div>
+      {kegList.map((kegMenu,index) =>
+        <KegMenu
+          name={kegMenu.name}
+          brand={kegMenu.brand}
+          price={kegMenu.price}
+          alcoholContent={kegMenu.alcoholContent}
+          key={index}/>
+      )}
+    </div>
+  );  
+}
 
 
-export default kegList;
+
+
+export default KegList;
