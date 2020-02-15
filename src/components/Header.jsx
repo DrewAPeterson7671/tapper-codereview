@@ -6,8 +6,8 @@ function Header() {
   return (
     <div>
       <h1>Tapper</h1>
-      <Link to="/">Home</Link> | <Link to="/NewKegForm">Add New Keg</Link>
-    </div>  
+      <Link to='/'>Home</Link> | <Link to='/NewKegForm'>Add New Keg</Link>
+    </div>
   );
 }
 
