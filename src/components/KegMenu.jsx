@@ -4,17 +4,20 @@ import PropTypes from 'prop-types';
 
 
 function KegMenu(props) {
-  const highPrice = {
-    color: 'red'
+  const menuItems = {
+    textAlign: 'left',
+  }
+  const kegStyles = {
+    listStyleType: 'none',
   }
 
   return (
-    <div>
+    <div style={menuItems}>
       <ul>
-        <li>Name: {props.name}</li>
-        <li>Brand: {props.brand}</li>
-        <li>Price: ${props.price}</li>
-        <li>Alcohol Content: {props.alcoholContent}%</li>
+        <li style={kegStyles}>Name: {props.name}</li>
+        <li style={kegStyles}>Brand: {props.brand}</li>
+        <li style={kegStyles}>Price: ${props.price}</li>
+        <li style={kegStyles}>Alcohol Content: {props.alcoholContent}%</li>
       </ul>
     </div>
   );

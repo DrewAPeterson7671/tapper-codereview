@@ -30,31 +30,31 @@ const kegList = [
     name: 'Heck Whatever',
     brand: 'Putz Beer',
     price: '5.35',
-    alcoholContent: '8.3',
+    alcoholContent: '7.3',
   },
   {
     name: 'Madman',
     brand: 'Pandering Image',
     price: '6.70',
-    alcoholContent: '8.3',
+    alcoholContent: '6.1',
   },
   {
     name: 'Getter',
     brand: 'Pandering Image',
     price: '5.03',
-    alcoholContent: '8.3',
+    alcoholContent: '5.5',
   },
   {
     name: 'Cool Drinking, Not Trailer Park',
     brand: 'Vance Maximus',
     price: '6.11',
-    alcoholContent: '8.3',
+    alcoholContent: '5.3',
   },
   {
-    name: 'Half Croc, All Redundant',
+    name: 'Half Croc, Half Robot. All Redundant',
     brand: 'Crocubot',
     price: '4.07',
-    alcoholContent: '8.3',
+    alcoholContent: '4.3',
   },
 ];
 
