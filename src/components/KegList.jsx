@@ -1,5 +1,6 @@
 import React from 'react';
 import Keg from './Keg';
+import PropTypes from 'prop-types';
 
 const kegList = [
   {
@@ -58,24 +59,28 @@ const kegList = [
   },
 ];
 
-function KegList(){
+function KegList(props){
 
   return (
     <div>
       <h2>Our Selection</h2>
-      {kegList.map((kegMenu,index) =>
-        <Keg
+      {Object.keys(props.kegList).map(function(kegId) {
+        let ticket=props.kegList[kegId];
+        return <Keg
           name={kegMenu.name}
           brand={kegMenu.brand}
           price={kegMenu.price}
           alcoholContent={kegMenu.alcoholContent}
           key={index}/>
-      )}
+      })}
     </div>
   );
 }
 
-
-
+KegList.propTypes = {
+  kegList: PropTypes.object,
+  currentRouterPath: PropTypes.string,
+  onNewKegAddition: PropTypes.func
+};
 
 export default KegList;

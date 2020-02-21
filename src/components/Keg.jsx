@@ -19,9 +19,7 @@ function Keg(props) {
     listStyleType: 'none',
   }
 
-
-
-  return (
+  const kegInformation =
     <div style={menuItems}>
       <ul style={kegContainers}>
         <li style={kegStyles}>Name: {props.name}</li>
@@ -29,15 +27,31 @@ function Keg(props) {
         <li style={kegStyles}>Price: ${props.price}</li>
         <li style={kegStyles}>Alcohol Content: {props.alcoholContent}%</li>
       </ul>
-    </div>
-  );
+    </div>;
+  if (props.currentRouterPath === '/staff'){
+    return (
+      <div>
+        <p> go to keg.jsx and add quantity</p>
+        <p> should show 124 pints, click reduces by 1</p>
+        {kegList}
+      </div>
+    );
+  } else {
+    return (
+      <div>
+        {kegList}
+      </div>
+    );
+  }
 }
+
 
 Keg.propTypes = {
   name: PropTypes.string.isRequired,
   brand: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
   alcoholContent: PropTypes.number.isRequired,
+  kegId: Proptypes.string.isRequired
 };
 
 export default Keg;
