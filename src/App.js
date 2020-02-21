@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
-import KegMenu from './components/KegMenu';
+import Keg from './components/Keg';
 import KegList from './components/KegList';
 import NewKegForm from './components/NewKegForm';
 import { Switch, Route } from 'react-router-dom';

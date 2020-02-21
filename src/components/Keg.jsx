@@ -1,19 +1,33 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Row, Col } from 'react-flexbox-grid';
 
 
 
-function KegMenu(props) {
+function Keg(props) {
   const menuItems = {
     textAlign: 'left',
+    fontWeight: 'bold',
+    display: 'flex',
+    flexFlow: 'row wrap',
+    height: '100px',
+    justifyContent: 'space-around',
+  }
+
+  const kegContainers = {
+    width: '200px',
+    height: '200px',
+    margin: '50px',
   }
   const kegStyles = {
     listStyleType: 'none',
   }
 
+
+
   return (
     <div style={menuItems}>
-      <ul>
+      <ul style={kegContainers}>
         <li style={kegStyles}>Name: {props.name}</li>
         <li style={kegStyles}>Brand: {props.brand}</li>
         <li style={kegStyles}>Price: ${props.price}</li>
@@ -23,11 +37,11 @@ function KegMenu(props) {
   );
 }
 
-KegMenu.propTypes = {
+Keg.propTypes = {
   name: PropTypes.string.isRequired,
   brand: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
   alcoholContent: PropTypes.number.isRequired,
 };
 
-export default KegMenu;
+export default Keg;

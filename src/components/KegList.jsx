@@ -1,5 +1,5 @@
 import React from 'react';
-import KegMenu from './KegMenu';
+import Keg from './Keg';
 
 const kegList = [
   {
@@ -64,7 +64,7 @@ function KegList(){
     <div>
       <h2>Our Selection</h2>
       {kegList.map((kegMenu,index) =>
-        <KegMenu
+        <Keg
           name={kegMenu.name}
           brand={kegMenu.brand}
           price={kegMenu.price}
