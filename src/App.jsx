@@ -9,6 +9,7 @@ import Staff from './components/Staff';
 import { Switch, Route } from 'react-router-dom';
 import { v4 } from 'uuid';
 
+
 class App extends React.Component {
 
 constructor(props) {
@@ -34,8 +35,7 @@ render() {
       <Switch>
         <Route exact path='/' render={()=><KegList keglist={this.state.masterKegList} />} />
         <Route path='/newkeg' render={()=><NewKegForm onNewKegAdditiont={this.handleNewKegSubmission} />} />
-        <Route path='/staff' render={()=><NewKegForm onNewKegAdditiont={this.handleNewKegSubmission} />} />        
-        <Route path='/NewKegForm' component={NewKegForm} />
+        <Route path='/staff' render={(props)=><Staff kegList={this.state.masterKegList} currentRouterPath={props.location.pathname}/>} />
         <Route component={Error404} />
       </Switch>
 

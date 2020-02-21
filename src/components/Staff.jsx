@@ -4,10 +4,10 @@ import KegList from './KegList';
 
 function Staff(props) {
 
-}
+
   return (
     <div>
-      <h2>Staff Page</p>
+      <h2>Staff Page</h2>
       <KegList
         kegList={props.kegList}
         currentRouterPath={props.currentRouterPath}/>
