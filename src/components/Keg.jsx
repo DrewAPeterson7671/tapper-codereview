@@ -33,13 +33,13 @@ function Keg(props) {
       <div>
         <p> go to keg.jsx and add quantity</p>
         <p> should show 124 pints, click reduces by 1</p>
-        {kegList}
+        {kegInformation}
       </div>
     );
   } else {
     return (
       <div>
-        {kegList}
+        {kegInformation}
       </div>
     );
   }
@@ -51,7 +51,7 @@ Keg.propTypes = {
   brand: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
   alcoholContent: PropTypes.number.isRequired,
-  kegId: Proptypes.string.isRequired
+  kegId: PropTypes.string.isRequired
 };
 
 export default Keg;

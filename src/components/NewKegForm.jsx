@@ -1,12 +1,12 @@
 import React from 'react';
-import Proptypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 function NewKegForm(props){
   let _name = null;
   let _brand = null;
   let _price = null;
   let _alcoholContent = null;
-}
+
 
 function handleNewKegSubmission(event) {
   event.preventDefault();
@@ -45,7 +45,7 @@ function handleNewKegSubmission(event) {
   );
 }
 
-NewKegForm.proptypes = {
+NewKegForm.propTypes = {
   onNewKegAddition: PropTypes.func
 }
 
