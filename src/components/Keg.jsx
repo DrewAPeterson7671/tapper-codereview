@@ -1,20 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Row, Col } from 'react-flexbox-grid';
-
-
 
 function Keg(props) {
   const menuItems = {
     textAlign: 'left',
     fontWeight: 'bold',
-    display: 'flex',
-    flexFlow: 'row wrap',
-    height: '100px',
-    justifyContent: 'space-around',
+    position: 'relative',
   }
 
   const kegContainers = {
+    position: 'relative',
+    display: 'inline',
     width: '200px',
     height: '200px',
     margin: '50px',
