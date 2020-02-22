@@ -24,8 +24,9 @@ handleNewKegSubmission(newKeg){
   var newKegId = v4()
   var newMasterKegList = Object.assign({},
   this.state.masterKegList, {
-    [newKegId]: newKeg
+    [newKeg.Id]: newKeg
   });
+  this.setState({masterKegList: newMasterKegList});
 }
 
 render() {
@@ -33,7 +34,7 @@ render() {
     <div className='App'>
       <Header/>
       <Switch>
-        <Route exact path='/' render={()=><KegList keglist={this.state.masterKegList} />} />
+        <Route exact path='/' render={()=><KegList kegList={this.state.masterKegList} />} />
         <Route path='/newkeg' render={()=><NewKegForm onNewKegAdditiont={this.handleNewKegSubmission} />} />
         <Route path='/staff' render={(props)=><Staff kegList={this.state.masterKegList} currentRouterPath={props.location.pathname}/>} />
         <Route component={Error404} />
