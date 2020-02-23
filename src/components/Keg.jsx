@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
+
 function Keg(props) {
+  const [kegCount, setKegCount] = useState(124);
   const menuItems = {
     textAlign: 'left',
     fontWeight: 'bold',
@@ -26,14 +28,14 @@ function Keg(props) {
         <li style={kegStyles}>Brand: {props.brand}</li>
         <li style={kegStyles}>Price: ${props.price}</li>
         <li style={kegStyles}>Alcohol Content: {props.alcoholContent}%</li>
+        <li style={kegStyles}>Remaining Pints: {kegCount}</li>
       </ul>
     </div>;
   if (props.currentRouterPath === '/staff'){
     return (
       <div>
-        <p> go to keg.jsx and add quantity</p>
-        <p> should show 124 pints, click reduces by 1</p>
         {kegInformation}
+        <button onClick={() => setKegCount(kegCount -1)}>Pour One!</button>
       </div>
     );
   } else {

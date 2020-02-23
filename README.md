@@ -66,3 +66,21 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+
+Update Readme
+update diagram
+embed diagram
+update price dollar sign
+EDIT KEG if there's a mistake
+customer Pints left in keg from 124
+Staff clint to serve a pint and -1 to total
+Staff color for less than 10 pints left
+Color for prices over $5
+Color for alcoholContent over 4
+
+Style beer list
+style navbar
+Style Form
+Style Staff

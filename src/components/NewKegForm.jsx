@@ -36,8 +36,8 @@ function handleNewKegSubmission(event) {
           ref={(input) => {_price = input;}}/>
         <input
           type='text'
-          id='alchololContent'
-          placeholder='Alcholol Content'
+          id='alcoholContent'
+          placeholder='Alcohol Content'
           ref={(input) => {_alcoholContent = input;}}/>
         <button type='submit'>Add Keg</button>
       </form>
