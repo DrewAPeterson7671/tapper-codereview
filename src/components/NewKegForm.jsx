@@ -22,22 +22,22 @@ function handleNewKegSubmission(event) {
         <input
           type='text'
           id='name'
-          placeholder='Name'/>
+          placeholder='Name'
           ref={(input) => {_name = input;}}/>
         <input
           type='text'
           id='brand'
-          placeholder='Brand'/>
+          placeholder='Brand'
           ref={(input) => {_brand = input;}}/>
         <input
           type='text'
           id='price'
-          placeholder='Price'/>
+          placeholder='Price'
           ref={(input) => {_price = input;}}/>
         <input
           type='text'
           id='alchololContent'
-          placeholder='Alcholol Content'/>
+          placeholder='Alcholol Content'
           ref={(input) => {_alcoholContent = input;}}/>
         <button type='submit'>Add Keg</button>
       </form>

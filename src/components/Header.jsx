@@ -11,7 +11,7 @@ function Header() {
     <div>
       <img style={bannerStyle} src={tapperlogo} />
       <hr/>
-      <Link to='/'>Home</Link> | <Link to='/NewKegForm'>Add New Keg</Link> | <Link to='/staff'>Staff</Link>
+      <Link to='/'>Home</Link> | <Link to='/newkeg'>Add New Keg</Link> | <Link to='/staff'>Staff</Link>
     </div>
   );
 }
