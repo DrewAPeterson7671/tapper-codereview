@@ -1,77 +1,60 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# _Tapper_
 
-## Available Scripts
+#### _Application for a bar, 2/23/2020_
 
-In the project directory, you can run:
+#### By _**Drew Peterson**_
 
-### `npm start`
+## Description
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+_This application is for a bar with kegs on tap to serve a menu to patrons and to have admin control to add kegs._
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Setup/Installation Requirements
 
-### `npm test`
+* Clone repository from Github.
+* Install in terminal by running "npm install".
+* Start the server in terminal by running "npm run start",
+* Launch Chrome browser and type "localhost:3000/" in the URL.  The "npm run start" command should launch the page automatically.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Stories
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* As a patron, I want to see a list/menu of all available kegs. For each keg, I need to see its name, brand, price and alcoholContent (or perhaps something like flavor for a kombucha store).
+* As an employee, I want to fill out a form when I tap a new keg to add it to the list. (Don't worry about authenticating employee user accounts yet.)
+* As an employee, I want the option to edit a keg's properties after entering them just in case I make a mistake.
+* As a patron and/or employee, I want to see how many pints are left in a keg.
+* As an employee, I want to be able to click a button next to a keg whenever I sell a pint of it. This should decrease the number of pints left by 1.
+* As an employee, I want to be able to see kegs with less than 10 pints left so I can be ready to change them.
+* As a patron, I want to have kegs prices to be color-coded for easy readability. Perhaps based on their price (greater or less than $5 per pint, perhaps).
+* As a patron, I want to use the alcohol content property to display stronger beers differently than weaker beers.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Component Structure
+![Component Structure Diagram] (./src/assets/images/diagram.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Known Bugs
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+_There are no known bugs at this time._
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Support and contact details
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+_Please contact me directly via email at drew.a.peterson@hotmail.com with any bug reports, questions, critique, or for any reason._
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Technologies Used
 
-## Learn More
+_Javascript and React Library_
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+*GPL*
 
 
 
-Update Readme
-update diagram
-embed diagram
+Copyright (c) 2020 **_Drew Peterson_**
+
+
+
+
+
 update price dollar sign
 EDIT KEG if there's a mistake
 customer Pints left in keg from 124
